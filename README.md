@@ -34,41 +34,6 @@ cd SQL-Challenge/src
 uv sync
 ```
 
-# SQL 15 Days Challenge
-
-A comprehensive 15-day SQL challenge implementation using Python and SQLite, featuring various data analysis problems and solutions.
-
-## 🎯 Overview
-
-This project contains 15 different SQL challenges that cover a wide range of database operations and data analysis scenarios. Each challenge includes problem statements, synthetic data generation, and optimized SQL solutions.
-
-## 🚀 Features
-
-- **15 SQL Challenges** - From basic queries to complex data analysis
-- **SQLite Integration** - Lightweight, serverless database
-- **Synthetic Data** - Auto-generated test data for each challenge
-- **Utility Functions** - Helper functions for database operations
-- **Modern Python** - Built with Python 3.12+
-- **UV Package Manager** - Fast dependency management
-
-## 📋 Prerequisites
-
-- Python 3.13 or higher
-- UV package manager (recommended) or pip
-
-## 🛠️ Installation
-
-### Using UV (Recommended)
-
-```bash
-# Clone the repository
-git clone https://github.com/ehsankf/SQL-Challenge.git
-cd SQL-Challenge/src
-
-# Install dependencies
-uv sync
-```
-
 ### Using pip
 
 ```bash
@@ -90,12 +55,8 @@ uv run python sql_1.py
 uv run python sql_2.py
 # ... etc
 
-# Using the script entry point
-uv run sql-challenge
-
 # Using pip
 python sql_1.py
-python main.py
 ```
 
 
