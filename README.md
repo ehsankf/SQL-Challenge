@@ -48,7 +48,7 @@ This project contains 15 different SQL challenges that cover a wide range of dat
 - **SQLite Integration** - Lightweight, serverless database
 - **Synthetic Data** - Auto-generated test data for each challenge
 - **Utility Functions** - Helper functions for database operations
-- **Modern Python** - Built with Python 3.13+
+- **Modern Python** - Built with Python 3.12+
 - **UV Package Manager** - Fast dependency management
 
 ## 📋 Prerequisites
@@ -113,19 +113,6 @@ python main.py
 | 13-15 | Final Challenges | Complex data analysis and reporting |
 
 ## 🔧 Development
-
-### Code Quality Tools
-
-```bash
-# Format code
-uv run black .
-
-# Lint code
-uv run ruff check .
-
-# Run tests
-uv run pytest
-```
 
 ### Project Structure
 

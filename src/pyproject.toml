@@ -3,7 +3,7 @@ name = "sql-15-days-challenge"
 version = "0.1.0"
 description = "A 15-day SQL challenge implementation using Python and SQLite with various data analysis problems"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.12"
 dependencies = []
 authors = [
     { name = "Ehsan Kazemi" }
