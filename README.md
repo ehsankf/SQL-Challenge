@@ -34,57 +34,6 @@ cd SQL-Challenge/src
 uv sync
 ```
 
-## 🎮 Usage
-### Run Individual Challenges
-
-# Using UV
-uv run python sql_1.py
-uv run python sql_2.py
-# ... etc
-
-# Using the script entry point
-uv run sql-challenge
-
-# Using pip
-python sql_1.py
-python main.py
-
-## Project Structure
-
-src/
-├── main.py              # Entry point
-├── utils.py             # Database utility functions
-├── sql_1.py - sql_15.py # Individual challenge solutions
-├── pyproject.toml       # Project configuration
-├── README.md           # This file
-└── sql_challenge.db    # Generated SQLite database
-
-## 📖 Example Challenge
-# sql_1.py - User Engagement Analysis
-"""
-Find the percentage of users who have never liked or commented on any posts.
-"""
-
-# Create tables with synthetic data
-cursor.execute('''CREATE TABLE users (user_id INTEGER, name TEXT)''')
-cursor.execute('''CREATE TABLE likes (user_id INTEGER, post_id INTEGER)''')
-cursor.execute('''CREATE TABLE comments (user_id INTEGER, post_id INTEGER)''')
-
-# SQL Solution
-query = '''
-WITH engaged_users AS (
-    SELECT DISTINCT user_id FROM likes
-    UNION
-    SELECT DISTINCT user_id FROM comments
-)
-SELECT 
-    ROUND(
-        (COUNT(*) - (SELECT COUNT(*) FROM engaged_users)) * 100.0 / COUNT(*), 2
-    ) as percentage_never_engaged
-FROM users;
-'''
-
-```md
 # SQL 15 Days Challenge
 
 A comprehensive 15-day SQL challenge implementation using Python and SQLite, featuring various data analysis problems and solutions.
@@ -149,11 +98,6 @@ python sql_1.py
 python main.py
 ```
 
-### Run All Challenges
-
-```bash
-uv run python main.py
-```
 
 ## 📚 Challenge Overview
 
